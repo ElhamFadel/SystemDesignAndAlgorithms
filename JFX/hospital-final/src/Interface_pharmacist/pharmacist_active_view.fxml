@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="644.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interface_pharmacist.Pharmacist_active_viewController">
+   <right>
+      <VBox prefHeight="400.0" prefWidth="189.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="121.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets left="40.0" top="20.0" />
+               </VBox.margin>
+               <image>
+                  <Image url="@../Resources/drug.png" />
+               </image>
+            </ImageView>
+            <Label text="Name" textFill="BLUEVIOLET">
+               <VBox.margin>
+                  <Insets left="80.0" top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Bell MT Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </right>
+   <bottom>
+      <GridPane prefHeight="80.0" prefWidth="644.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="backBtn" mnemonicParsing="false" onAction="#back" prefHeight="40.0" prefWidth="120.0" style="-fx-background-radius: 10;" styleClass="button_1" stylesheets="@../Interface/style.css" text="back">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            <Button fx:id="view_drug_btn" mnemonicParsing="false" onAction="#viewDrug" prefHeight="39.0" prefWidth="120.0" style="-fx-background-radius: 10;" styleClass="button_1" stylesheets="@../Interface/style.css" text="View Drugs" GridPane.columnIndex="3">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+         </children>
+      </GridPane>
+   </bottom>
+   <center>
+      <TableView fx:id="drug_tableview" prefHeight="320.0" prefWidth="366.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="id_col" prefWidth="57.0" text="id" />
+          <TableColumn fx:id="name_col" minWidth="0.0" prefWidth="115.0" text="name" />
+            <TableColumn fx:id="quantity_col" minWidth="0.0" prefWidth="105.0" text="quantity" />
+            <TableColumn fx:id="dose_col" prefWidth="137.0" text="dose" />
+        </columns>
+         <BorderPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="30.0" />
+         </BorderPane.margin>
+      </TableView>
+   </center>
+</BorderPane>

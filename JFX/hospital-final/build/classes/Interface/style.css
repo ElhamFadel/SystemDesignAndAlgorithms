@@ -1,0 +1,42 @@
+
+
+.VBox {
+    
+    -fx-background-color:#8A2BE2;
+    
+}
+
+.button_1{
+    
+     -fx-background-color:#8A2BE2;
+     -fx-text-fill: white;
+     
+}
+
+.label_1{
+    
+    -fx-text-fill: #8A2BE2;
+    
+}
+.button_doctor{
+-fx-background-color :#8A2BE2;
+-fx-text-fill: white;
+-fx-font-family: Century Schoolbook;
+-fx-text-alignment: center ;
+-fx-font-siz:18px ;
+-fx-max-hight :450px;
+-fx-max-width: 150px;  
+}
+.anchor{
+-fx-pref-width :700;
+-fx-pref_hight: 420;  
+}
+.main_doc_btn{
+-fx-background-color :#8A2BE2;
+ -fx-text-fill: white;
+-fx-max-width :220;
+-fx-max_hight: 50;
+-fx-font-family: Century Schoolbook;
+-fx-text-alignment: center ;
+-fx-font-siz:18px ;
+}

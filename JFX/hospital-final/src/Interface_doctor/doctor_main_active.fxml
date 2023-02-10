@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="391.0" prefWidth="700.0" styleClass="anchor" stylesheets="@../Interface/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interface_doctor.Doctor_main_activeController">
+   <children>
+      <VBox layoutX="8.0" layoutY="1.0" prefHeight="377.0" prefWidth="220.0" style="-fx-background-color: #e7e7e7;">
+         <children>
+            <Button fx:id="addPbtn" mnemonicParsing="false" onAction="#addPatient" prefHeight="60.0" prefWidth="220.0" styleClass="main_doc_btn" stylesheets="@../Interface/style.css" text="Add Patient" textAlignment="CENTER" textFill="#e8e8e8">
+               <font>
+                  <Font name="Century Schoolbook Bold" size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="delpPbtn" mnemonicParsing="false" onAction="#deletePatient" prefHeight="60.0" prefWidth="220.0" styleClass="main_doc_btn" stylesheets="@../Interface/style.css" text="Delete Patient" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Century Schoolbook Bold" size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="upPbtn" mnemonicParsing="false" onAction="#updatePatient" prefHeight="60.0" prefWidth="220.0" styleClass="main_doc_btn" stylesheets="@../Interface/style.css" text="UpdatePatient" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Century Schoolbook Bold" size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="viewPbtn" mnemonicParsing="false" onAction="#viewPatients" prefHeight="60.0" prefWidth="220.0" styleClass="main_doc_btn" stylesheets="@../Interface/style.css" text="View Patients" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Century Schoolbook Bold" size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="viewInfobtn" mnemonicParsing="false" onAction="#viewInfo" prefHeight="60.0" prefWidth="220.0" styleClass="main_doc_btn" stylesheets="@../Interface/style.css" text="View Patient Info" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Century Schoolbook Bold" size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="logoutbtn" mnemonicParsing="false" onAction="#logout" prefHeight="60.0" prefWidth="220.0" styleClass="main_doc_btn" stylesheets="@../Interface/style.css" text="logout" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Century Schoolbook Bold" size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <ImageView fitHeight="377.0" fitWidth="395.0" layoutX="239.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/doctor_patient.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

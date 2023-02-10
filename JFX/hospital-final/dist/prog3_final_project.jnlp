@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="prog3_final_project.jnlp">
+  <information>
+    <title>prog3_final_project</title>
+    <vendor>Shams</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib\mysql-connector-java-8.0.28.jar" size="2476480" download="eager" />
+    <jar href="prog3_final_project.jar" size="290551" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="prog3_final_project.Prog3_final_project"  name="prog3_final_project" />
+  <update check="always"/>
+</jnlp>

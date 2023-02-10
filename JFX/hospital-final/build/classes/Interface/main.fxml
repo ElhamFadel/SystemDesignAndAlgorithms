@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="566.0" prefWidth="586.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interface.FXMLDocumentController">
+   <children>
+      <VBox prefHeight="566.0" prefWidth="298.0" styleClass="VBox" stylesheets="@style.css">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="130.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/hospital.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="70.0" top="180.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label text="HOSPITAL IN" textAlignment="CENTER" textFill="#f8f5f5">
+               <font>
+                  <Font name="Bell MT Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="85.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+            <Label layoutX="75.0" layoutY="315.0" prefHeight="23.0" prefWidth="67.0" text="IUG" textAlignment="CENTER" textFill="#f8f5f5">
+               <font>
+                  <Font name="SansSerif Bold" size="31.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="110.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+      </VBox>
+      <VBox prefHeight="566.0" prefWidth="290.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets left="78.0" top="90.0" />
+               </VBox.margin>
+               <image>
+                  <Image url="@../Resources/hosp.png" />
+               </image>
+            </ImageView>
+            <Label text="Welcome Back,">
+               <font>
+                  <Font name="Sitka Text Bold" size="30.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="30.0" top="40.0" />
+               </VBox.margin>
+            </Label>
+            <Label styleClass="label_1" stylesheets="@style.css" text="Please, choise :">
+               <VBox.margin>
+                  <Insets left="30.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <VBox prefHeight="180.0" prefWidth="212.0">
+               <children>
+                  <Button fx:id="doc_id" mnemonicParsing="false" onAction="#doctorlogin" prefHeight="50.0" prefWidth="140.0" style="-fx-background-radius: 30;" styleClass="button_1" stylesheets="@style.css" text="Doctor">
+                     <font>
+                        <Font name="Bell MT" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="pha_id" mnemonicParsing="false" onAction="#pharmacistlogin" prefHeight="50.0" prefWidth="140.0" style="-fx-background-radius: 30;" styleClass="button_1" stylesheets="@style.css" text="Pharmacist">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Bell MT" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="50.0" left="80.0" top="40.0" />
+               </VBox.margin>
+            </VBox>
+            <Label alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="282.0" styleClass="label_1" stylesheets="@style.css" text="                                                Copy Rights 2022">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</HBox>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Interface_doctor.Doctor__addPatientController">
+      <children>
+      <Button fx:id="add_patientbtn" layoutX="466.0" layoutY="353.0" maxHeight="45.0" maxWidth="162.0" mnemonicParsing="false" onAction="#addPatient" prefHeight="40.0" prefWidth="130.0" styleClass="button_doctor" stylesheets="@../Interface/style.css" text="Add ">
+        
+      </Button>
+      <Button fx:id="backbtn" layoutX="29.0" layoutY="353.0" maxHeight="45.0" maxWidth="162.0" mnemonicParsing="false" onAction="#back" prefHeight="40.0" prefWidth="130.0" styleClass="button_doctor" stylesheets="@../Interface/style.css" text="Back">
+        
+      </Button>
+      <GridPane layoutX="40.0" layoutY="29.0" prefHeight="297.0" prefWidth="373.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="269.0" minWidth="10.0" prefWidth="92.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="418.0" minWidth="10.0" prefWidth="281.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="47.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="55.0" minHeight="10.0" prefHeight="53.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="35.0" prefWidth="234.0" styleClass="label_1" stylesheets="@../Interface/style.css" text="Name : " GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+            <Label prefHeight="35.0" prefWidth="234.0" styleClass="label_1" stylesheets="@../Interface/style.css" text="Age : " GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label prefHeight="35.0" prefWidth="234.0" styleClass="label_1" stylesheets="@../Interface/style.css" text="Gender : " GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Label prefHeight="35.0" prefWidth="234.0" styleClass="label_1" stylesheets="@../Interface/style.css" text="Image : " GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <Label prefHeight="35.0" prefWidth="234.0" styleClass="label_1" stylesheets="@../Interface/style.css" text="Entracne Date : " GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+            <Label prefHeight="35.0" prefWidth="234.0" styleClass="label_1" stylesheets="@../Interface/style.css" text="Problem : " GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+            <TextField fx:id="name_textFeild" prefHeight="34.0" prefWidth="281.0" GridPane.columnIndex="1" />
+            <TextField fx:id="age_textfeild" prefHeight="34.0" prefWidth="281.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="problem_textFeild" prefHeight="34.0" prefWidth="281.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <DatePicker fx:id="entrance_date_datepick" prefHeight="33.0" prefWidth="281.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Button fx:id="add_image_btn" mnemonicParsing="false" onAction="#addImage" prefHeight="38.0" prefWidth="281.0" style="-fx-background-color: #f0ebf5;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <RadioButton fx:id="female_radio_btn" mnemonicParsing="false" prefHeight="33.0" prefWidth="115.0" text="Female" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <toggleGroup>
+                  <ToggleGroup fx:id="gender_toggle_group" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="male_radio_btn" mnemonicParsing="false" prefHeight="33.0" prefWidth="115.0" text="Male" toggleGroup="$gender_toggle_group" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <ImageView fitHeight="93.0" fitWidth="126.0" layoutX="509.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/add.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="117.0" fitWidth="115.0" layoutX="466.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

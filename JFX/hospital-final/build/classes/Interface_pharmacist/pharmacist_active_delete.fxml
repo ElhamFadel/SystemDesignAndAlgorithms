@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="398.0" prefWidth="646.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interface_pharmacist.Pharmacist_active_deleteController">
+   <bottom>
+      <GridPane prefHeight="80.0" prefWidth="646.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="del_drug_btn" mnemonicParsing="false" onAction="#deleteDrug" prefHeight="40.0" prefWidth="120.0" style="-fx-background-radius: 10;" styleClass="button_1" stylesheets="@../Interface/style.css" text="Delete Drugs" GridPane.columnIndex="3">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            <Button fx:id="back_bth" mnemonicParsing="false" onAction="#back" prefHeight="40.0" prefWidth="120.0" style="-fx-background-radius: 10;" styleClass="button_1" stylesheets="@../Interface/style.css" text="back" GridPane.halignment="CENTER">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+   </bottom>
+   <center>
+      <TableView fx:id="drug_tableview" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#getSelected" prefHeight="298.0" prefWidth="452.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="id_col" prefWidth="110.0" text="id" />
+          <TableColumn fx:id="name_col" prefWidth="106.0" text="name" />
+            <TableColumn fx:id="quantity_col" prefWidth="121.0" text="quantity" />
+            <TableColumn fx:id="dose_col" minWidth="8.0" prefWidth="114.0" text="dose" />
+        </columns>
+         <BorderPane.margin>
+            <Insets left="20.0" top="20.0" />
+         </BorderPane.margin>
+      </TableView>
+   </center>
+</BorderPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interface_doctor.Show_preciptionsController">
+   <children>
+      <TableView fx:id="prescriptionTableView" layoutX="14.0" layoutY="14.0" prefHeight="282.0" prefWidth="390.0">
+        <columns>
+          <TableColumn fx:id="pat_idCol" prefWidth="75.0" text="pat_id" />
+          <TableColumn fx:id="medicine_idCol" prefWidth="75.0" text="medicine_id" />
+            <TableColumn fx:id="Doc_idCol" prefWidth="75.0" text="doctors_id" />
+            <TableColumn fx:id="pubDateCol" prefWidth="164.0" text="published_date" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="125.0" fitWidth="116.0" layoutX="470.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/showhistory.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="back_viewInfobtn" layoutX="21.0" layoutY="339.0" mnemonicParsing="false" onAction="#backToInfo" prefHeight="30.0" prefWidth="140.0" styleClass="button_doctor" stylesheets="@../Interface/style.css" text="Back" />
+      <Button fx:id="showHistorybtn" layoutX="446.0" layoutY="339.0" mnemonicParsing="false" onAction="#showHistory" prefHeight="30.0" prefWidth="140.0" styleClass="button_doctor" stylesheets="@../Interface/style.css" text="show" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="644.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interface_pharmacist.Pharmacist_active_addController">
+   <bottom>
+      <GridPane prefHeight="80.0" prefWidth="644.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="back_btn" mnemonicParsing="false" onAction="#back" prefHeight="40.0" prefWidth="120.0" style="-fx-background-radius: 10;" styleClass="button_1" stylesheets="@../Interface/style.css" text="back">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            <Button fx:id="add_drug_btn" mnemonicParsing="false" onAction="#addDrug" prefHeight="40.0" prefWidth="120.0" style="-fx-background-radius: 10;" styleClass="button_1" stylesheets="@../Interface/style.css" text="Add Drugs" GridPane.columnIndex="3">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+         </children>
+      </GridPane>
+   </bottom>
+   <right>
+      <GridPane prefHeight="250.0" prefWidth="341.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="221.0" minWidth="10.0" prefWidth="67.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="365.0" minWidth="10.0" prefWidth="246.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="76.0" minHeight="10.0" prefHeight="71.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="90.0" minHeight="10.0" prefHeight="65.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="113.0" minHeight="10.0" prefHeight="77.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Name:" textFill="BLUEVIOLET" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Andalus" size="16.0" />
+               </font>
+            </Label>
+            <Label text="Quantity:" textFill="BLUEVIOLET" GridPane.halignment="LEFT" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Andalus" size="16.0" />
+               </font>
+            </Label>
+            <Label text="Dose:" textFill="BLUEVIOLET" GridPane.halignment="LEFT" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Andalus" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="drug_name_txtField" prefHeight="30.0" prefWidth="249.0" style="-fx-background-radius: 11;" GridPane.columnIndex="1" />
+            <TextField fx:id="drug_dose_txtField" prefHeight="30.0" prefWidth="346.0" style="-fx-background-radius: 11;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="quantity_txtField" prefHeight="30.0" prefWidth="346.0" style="-fx-background-radius: 11;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="40.0" left="30.0" top="30.0" />
+         </BorderPane.margin>
+      </GridPane>
+   </right>
+   <left>
+      <TableView fx:id="drug_tableview" prefHeight="320.0" prefWidth="301.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="id_col" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="name_col" prefWidth="75.0" text="name" />
+            <TableColumn fx:id="quantity_col" prefWidth="75.0" text="quantity" />
+            <TableColumn fx:id="dose_col" prefWidth="75.0" text="dose" />
+        </columns>
+      </TableView>
+   </left>
+</BorderPane>

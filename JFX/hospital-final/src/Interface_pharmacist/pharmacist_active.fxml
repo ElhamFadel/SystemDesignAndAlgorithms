@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="644.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interface_pharmacist.Pharmacist_activeController">
+   <bottom>
+      <GridPane prefHeight="115.0" prefWidth="644.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="logout_btn" mnemonicParsing="false" onAction="#logout" prefHeight="30.0" prefWidth="120.0" styleClass="button_1" stylesheets="@../Interface/style.css" text="LogOut" GridPane.columnIndex="3" />
+            <Button fx:id="add_drug_btn" mnemonicParsing="false" onAction="#addDrug" prefHeight="30.0" prefWidth="120.0" styleClass="button_1" stylesheets="@../Interface/style.css" text="Add Drugs" />
+            <Button fx:id="view_drug_btn" mnemonicParsing="false" onAction="#viewDrug" prefHeight="30.0" prefWidth="120.0" styleClass="button_1" stylesheets="@../Interface/style.css" text="View Drugs" GridPane.columnIndex="1" />
+            <Button fx:id="delete_drug_btn" mnemonicParsing="false" onAction="#deleteDrug" prefHeight="30.0" prefWidth="120.0" styleClass="button_1" stylesheets="@../Interface/style.css" text="Delete Drugs" GridPane.columnIndex="2" />
+         </children>
+      </GridPane>
+   </bottom>
+   <center>
+      <VBox prefHeight="400.0" prefWidth="189.0" stylesheets="@../Interface/style.css" BorderPane.alignment="BOTTOM_LEFT">
+         <children>
+            <ImageView fitHeight="180.0" fitWidth="232.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets left="220.0" top="20.0" />
+               </VBox.margin>
+               <image>
+                  <Image url="@../Resources/drug.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="36.0" prefWidth="333.0" text="welcome , pharmacist you can choose this operations : " textAlignment="CENTER" textFill="BLUEVIOLET">
+               <VBox.margin>
+                  <Insets left="290.0" top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

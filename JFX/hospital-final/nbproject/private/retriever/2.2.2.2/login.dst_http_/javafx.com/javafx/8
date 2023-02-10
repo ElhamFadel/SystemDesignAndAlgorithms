@@ -1,0 +1,225 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>شبكة باسل | تسجيل الدخول</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1256" />
+<link rel="shortcut icon" href="images/favicon.png" />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/responsee.css">
+<link rel="stylesheet" href="css/icons.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" type="text/css" href="css/JF-Flat-regular.css" />
+	  <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+      <script type="text/javascript" src="js/jquery-ui.min.js"></script> 
+      <script type="text/javascript" src="js/modernizr.js"></script>
+	  <script type="text/javascript" src="js/responsee.js"></script>
+	  <script type="text/javascript" src="js/mine.js"></script>
+
+
+
+</head>
+
+
+<body>
+
+
+
+
+ <div class="shadow-forms">
+	<div class="message warning">
+		
+		<div class="sub-head">
+            <img src="images/extawifi.png">
+		</div>
+        
+        <div class="line ">
+
+<!-- Start Top Nav -->
+	<div  style="padding:0px;">
+		<nav>
+		<p class="nav-text">القائمة</p>
+
+			<div class="top-nav s-12 l-12 " >
+				<ul>
+				 <li class="active"><a class="scroll" href="login.html">الرئيسية</a></li>
+					<li><a data-scroll href="price.html">الأسعار</a></li>
+					<li><a data-scroll href="point.html">نقاط البيع</a></li>					
+					<li><a data-scroll href="conc.html">تواصل معنا</a></li>
+					<li><a target="_blank" data-scroll href="https://www.facebook.com/basel.anwer.9">فيسبوك</a></li>
+
+				</ul>
+			</div>
+
+		</nav>
+	</div>
+<!-- End Top Nav --> 
+		</div>
+		
+		
+<!-- Start Clock -->	
+	<div class="line padding-sec" style="background-color:#E5E5E5">
+	<div class="box" style="padding: 5px; margin: 0px; background-color:#E5E5E5; color:#333; font-size: 16px;" >
+
+				  <div class="l-12 s-12"  id="clock" dir="rtl" align="center">
+    جارى فتح الساعة......</div>
+				  <script type="text/javascript"> function refrClock() { var d=new Date(); var s=d.getSeconds(); var m=d.getMinutes(); var h=d.getHours(); var day=d.getDay(); var date=d.getDate(); var month=d.getMonth(); var year=d.getFullYear(); var days=new Array("الأحد","الإثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت"); var months=new Array("01","02","03","04","05","06","07","08","09","10","11","12"); var am_pm; if (s<10) {s="0" + s} if (m<10) {m="0" + m} if (h>12) {h-=12;am_pm = "مساءً  "} else {am_pm="صباحاً  "} if (h<10) {h="0" + h} document.getElementById("clock").innerHTML= "   الساعة الآن :    " + h + ":" + m + ":" + s + " " + am_pm + " - " + days[day] + " " + date + " / " + months[month] + " /" + year; setTimeout("refrClock()",1000); } refrClock(); </script>
+	</div>
+</div>
+<!-- End Clock -->	
+
+<!-- Start news -->	
+	<div class="line " >
+			<div class="box" style="padding: 0px; margin: 0px; " >
+
+				  <div class="l-12 s-12"  dir="rtl" align="center"  >
+		 <iframe class="price" src="news.html" style=" border:solid 1px #ccc;   padding:5px;" width="90%" height="40px" > </iframe>
+   					</div>
+
+			</div>
+</div>
+<!-- End news -->
+
+<section class="padding-sec" style="padding-top:0;">
+	<div class="line" >		
+		<div class="s-12 l-12">	
+		<div>
+
+			<div style="background:rgba(0, 0, 0, 0.1); margin:10px; margin-top:25px; padding:10px; border-radius:20px;">
+			
+					<form name="login" action="http://2.2.2.2/login" method="post"
+					    >
+						<input type="hidden" name="dst" value="http://javafx.com/javafx/8" />
+						<input type="hidden" name="popup" value="true" />
+
+<br>
+<div style="color: #fff; font-size: 16px; font-weight:100;" align="center"> 
+
+</div>
+<input dir="rtl" onBlur="this.value=improveInput(this.value);"  name="username" type="text" value="" autocomplete="off" placeholder="إسم المستخدم"/>
+<input  dir="rtl" onBlur="this.value=improveInput(this.value);" name="password" type="password" autocomplete="off" placeholder="كلمة المرور"/>
+				<div><button class="signup" type="submit" />دخـــول</div>
+        
+        </form>
+  
+	
+	
+			</div>
+
+		</div>
+		</div>
+	</div>
+	
+</section>
+
+
+
+
+
+<!-- Start Point -->
+<section id="conc" class="padding-sec">
+	<div class="line" >
+		<div class="s-12 l-12 margin-bottom" style=" margin-top:20px;">
+
+			<table class="price" dir="rtl">
+			<tr>
+			 <td class="price2" style="background:#C1FF84; color:#333333; text-shadow:none;">• في حال حدوث مشاكل او للإستفسار :</td>
+			</tr>
+			
+			<tr style="background-color:#fff;">
+			  <td class="price2">
+			 
+			  <table style="margin-top:15px;">
+			  <tr>
+			  <td><img src="images/phone.svg" alt="phone" style="float:right; padding:5px;">
+			   جوال : 0598570048</td>
+			  </tr>
+			
+                             <tr>
+			  <td><img src="images/location.svg" alt="location" style="float:right; padding:5px;"> أو زيارتنا في ماركت باسل .</td>
+			  </tr>			  
+			  </table>
+			</td>
+			</tr>			
+			</table>
+
+
+		</div>
+	</div>
+</section>
+
+<!-- End Point -->
+
+
+
+
+
+        
+		<div class="sign-up" style="background:#333333; color:#FFFFFF" dir="rtl" align="center">
+			<p>جميع الحقوق محفوظة لشبكة باسل نت © 2019 - 2023</p>
+
+		</div>
+
+		</div>
+			
+		</div>
+		
+		<div id="backtotop" class="backtotop"> <img src="images/top.svg" style="height:40px; width:40px;"   alt="Back to Top"/></div>
+
+
+<script type="text/javascript">
+<!--
+  document.login.username.focus();
+//-->
+</script>
+
+
+<!-- Start Scroll Smoth -->
+<script>
+
+$(document).ready(function(){
+  $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname) {
+      var $target = $(this.hash);
+      $target = $target.length && $target
+      || $('[name=' + this.hash.slice(1) +']');
+      if ($target.length) {
+        var targetOffset = $target.offset().top;
+        $('html,body')
+        .animate({scrollTop: targetOffset}, 1000);
+		$(function ()
+			{	
+			updateURL: false
+			});
+       return false;
+      }
+    }
+  });
+});
+
+</script>
+
+<!-- End scroll Smoth -->
+
+<!--  Start Back fo up  -->
+<script>
+$(function() {
+  $(window).scroll(function() {
+      if($(this).scrollTop() != 0) {
+        $('#backtotop').fadeIn(); 
+      } else {
+        $('#backtotop').fadeOut();
+      }
+  });
+ 
+  $('#backtotop').click(function() {
+      $('body,html').animate({scrollTop:0},800);
+  }); 
+});
+
+</script>
+<!--  End Back fo up  -->
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="456.0" prefWidth="588.0" style="-fx-background-color: #d4dcf7;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment2.ViewUserPageController">
+   <children>
+      <TableView fx:id="usersTableView" layoutX="14.0" layoutY="14.0" prefHeight="341.0" prefWidth="376.0">
+        <columns>
+          <TableColumn fx:id="idcol" prefWidth="69.0" text="ID" />
+          <TableColumn fx:id="nameCol" prefWidth="95.0" text="Name" />
+            <TableColumn fx:id="cityCol" prefWidth="82.0" text="City" />
+            <TableColumn fx:id="gpaCol" prefWidth="53.0" text="GPA" />
+            <TableColumn fx:id="gndCol" prefWidth="75.0" text="Gender" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="127.0" layoutY="374.0" prefHeight="27.0" prefWidth="336.0" text="Select one User or more then click Delete Button " textAlignment="CENTER" />
+      <Button fx:id="deleteBtn" layoutX="437.0" layoutY="111.0" mnemonicParsing="false" onAction="#Delete" prefHeight="49.0" prefWidth="100.0" style="-fx-background-color: white;" text="Delete" textFill="#cf3636">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="backBtn" layoutX="437.0" layoutY="179.0" mnemonicParsing="false" onAction="#Back" prefHeight="49.0" prefWidth="100.0" style="-fx-background-color: e7e7e7;" text="Back" textFill="#634b5d">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

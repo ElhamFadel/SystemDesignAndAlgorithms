@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="644.0" style="-fx-background-color: #2098cf;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment2.UpdateUserPageController">
+   <children>
+      <TableView fx:id="usersTableView" layoutX="14.0" layoutY="38.0" onMouseClicked="#getSelectRow" prefHeight="312.0" prefWidth="322.0" style="-fx-background-color: #d4dcf7;">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="61.0" text="ID" />
+          <TableColumn fx:id="nameCol" prefWidth="81.0" text="Name" />
+            <TableColumn fx:id="cityCol" prefWidth="82.0" text="City" />
+            <TableColumn fx:id="gpaCol" prefWidth="44.0" text="GPA" />
+            <TableColumn fx:id="genCol" prefWidth="53.0" text="Gender" />
+        </columns>
+      </TableView>
+      <Label layoutX="381.0" layoutY="54.0" prefHeight="29.0" prefWidth="62.0" text="ID" />
+      <Label layoutX="381.0" layoutY="133.0" prefHeight="29.0" prefWidth="62.0" text="City" />
+      <Label layoutX="381.0" layoutY="93.0" prefHeight="29.0" prefWidth="62.0" text="Name" />
+      <Label layoutX="381.0" layoutY="171.0" prefHeight="29.0" prefWidth="62.0" text="Gender" />
+      <Label layoutX="380.0" layoutY="208.0" prefHeight="29.0" prefWidth="62.0" text="GPA" />
+      <TextField fx:id="idTextField" layoutX="443.0" layoutY="56.0" />
+      <TextField fx:id="nameTextField" layoutX="443.0" layoutY="95.0" />
+      <TextField fx:id="gpaTextField" layoutX="442.0" layoutY="208.0" />
+      <ChoiceBox fx:id="cityChoiceBox" layoutX="442.0" layoutY="135.0" prefWidth="150.0" />
+      <RadioButton fx:id="maleRadioBtn" layoutX="442.0" layoutY="177.0" mnemonicParsing="false" text="Male">
+         <toggleGroup>
+            <ToggleGroup fx:id="genderToggle" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="femaleRadioBtn" layoutX="529.0" layoutY="177.0" mnemonicParsing="false" text="Female" toggleGroup="$genderToggle" />
+      <Button fx:id="updatebtn" layoutX="451.0" layoutY="275.0" mnemonicParsing="false" onAction="#update" prefHeight="35.0" prefWidth="86.0" style="-fx-background-color: white;" text="Update" textFill="#2098dc">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="backBtn" layoutX="463.0" layoutY="321.0" mnemonicParsing="false" onAction="#Back" prefHeight="29.0" prefWidth="62.0" style="-fx-background-color: white;" text="Back" textFill="#2098dc">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+   </children>
+</Pane>
